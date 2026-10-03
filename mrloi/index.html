@@ -830,6 +830,13 @@ body::after {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Contact */
+.contact { text-align: center; }
+.pk-list.ct a::after { content: "Gọi"; font: 600 10px/1 var(--body); letter-spacing: .18em; text-transform: uppercase; color: var(--burg-700); border: 1px solid var(--burg-700); padding: 6px 9px; border-radius: 2px; }
+.ct-b { display: grid; gap: 3px; }
+.ct-n { font: 600 10px/1.2 var(--body); letter-spacing: .22em; text-transform: uppercase; color: var(--ink-dim); }
+.ct-t { font: 700 1.25rem/1.2 var(--display); letter-spacing: .08em; color: var(--burg-800); font-variant-numeric: tabular-nums; }
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
@@ -1106,8 +1113,16 @@ Sự hiện diện của mọi người khiến cột mốc này trọn vẹn 
     </div></div>
   </section>
 
-  <section class="sec closing" style="--i:5" aria-label="0867204785, alo em nhé">
-    <h2 class="big">0867204785, alo em nhé</h2>
+    <section class="sec contact" style="--i:5" aria-label="Liên hệ">
+    <h2 class="h-cap">Liên hệ</h2>
+    <span class="rule"></span>
+    <div class="pk-wrap"><div class="pk-group paper">
+      <ul class="pk-list ct"><li><a href="tel:0867204785"><span class="ct-b"><span class="ct-n">Ngân</span><span class="ct-t">0867 204 785</span></span></a></li><li><a href="tel:0933385187"><span class="ct-b"><span class="ct-n">em Như</span><span class="ct-t">0933 385 187</span></span></a></li></ul>
+    </div></div>
+  </section>
+
+  <section class="sec closing" style="--i:6" aria-label="Hẹn gặp anh">
+    <h2 class="big">Hẹn gặp anh</h2>
     <p class="count"><b id="days">2</b> <span id="unit">ngày nữa là đến chuyến bay</span></p>
     <div class="btns">
       <a class="btn-line" id="cal" href="#" target="_blank" rel="noopener">Save the date to calendar</a>
